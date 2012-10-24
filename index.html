@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Untitled Document</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/radiocheck.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        var el = $('.GUStyle');
+        if(el.length)
+          el.radiocheck({
+            //put a class on hover
+            'hover' : 1,
+            //put a class selected on label
+            'label' : 1,
+            //put a class hover on label
+            'labelhover' : 1
+          });
+      });
+
+    </script>
+    </head>
+    <body>
+		<div class="site">
+				<div class="header"> Header </div>
+				<!-- end header -->
+				<div class="main">
+						<form method="get" action="index.html">
+								<div class="dataContainer">
+										<fieldset>
+												<input type="radio" checked="checked" id="a1" name="a" class="GUStyle" />
+												<label for="a1">Primeira radio</label>
+												<input type="radio" id="a2" name="a" class="GUStyle" />
+												<label for="a2">Segunda radio</label>
+												<input type="radio" checked="checked" id="a3" name="a" class="GUStyle" />
+												<label for="a3">Primeira radio</label>
+												<input type="radio" id="a4" name="a" class="GUStyle" />
+												<label for="a4">Segunda radio</label>
+										</fieldset>
+										<fieldset>
+												<label for="b1">Terceira radio</label>
+												<input type="radio" id="b1" name="b" class="GUStyle" />
+												<label for="b2">Quarta radio</label>
+												<input type="radio" id="b2" name="b" class="GUStyle" />
+										</fieldset>
+										<input type="checkbox" id="c1" name="c1" class="GUStyle" />
+										<label for="c1">Primeira check</label>
+										<input type="checkbox" checked="checked" id="c2" name="c2" class="GUStyle" />
+										<label for="c2">Segunda check</label>
+								</div>
+								<input type="reset" value="Reset" />
+								<input type="submit" value="Submit" />
+						</form>
+				</div>
+				<!-- end main -->
+				<div class="footer"> Footer </div>
+				<!-- end footer --> 
+		</div>
+		<!-- end site -->
+</body>
+</html>
